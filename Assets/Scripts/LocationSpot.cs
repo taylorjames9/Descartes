@@ -18,11 +18,11 @@ public class LocationSpot : MonoBehaviour {
 	void Update(){
 		if (GetComponent<Renderer>().IsVisibleFrom(myViewCamera)) {
 
-			Debug.Log("Visible");
+			//Debug.Log("Visible");
 			iAmVisible = true;
 		}
 		else { 
-			Debug.Log("NOT VISIBLE");
+			//Debug.Log("NOT VISIBLE");
 			iAmVisible = false;
 
 		}

@@ -19,19 +19,19 @@ public class ViewManager : MonoBehaviour {
 
 
 	void OnEnable(){
-		for(int i=0;i<50;i++){
+		for(int i=0;i<200;i++){
 			Vector3 myVector3 = new Vector3(
 				Random.Range (-40,40), 
-				Random.Range (-10,10),
+				Random.Range (0,10),
 				Random.Range (-40, 40));
 			GameObject mylocation = (GameObject)Instantiate(locationDots, new Vector3(
 				myVector3.x, 
 				myVector3.y,
 				myVector3.z), Quaternion.identity);
 			GameObject myCubeObject = (GameObject)Instantiate (myCubePrefab, new Vector3(
-				myVector3.x, 
-				myVector3.y -20,
-				myVector3.z), Quaternion.identity);
+				Random.Range (-40,40), 
+				Random.Range (-35,-15),
+				Random.Range (-40, 40)), Quaternion.identity);
 			dictOfObjectsAndPoints.Add (myCubeObject, mylocation.transform);
 		}
 	}
