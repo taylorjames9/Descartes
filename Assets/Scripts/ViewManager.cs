@@ -21,9 +21,9 @@ public class ViewManager : MonoBehaviour {
 	void OnEnable(){
 		for(int i=0;i<50;i++){
 			Vector3 myVector3 = new Vector3(
-				Random.Range (-10,10), 
-				Random.Range (-1,1),
-				Random.Range (-10, 10));
+				Random.Range (-40,40), 
+				Random.Range (-10,10),
+				Random.Range (-40, 40));
 			GameObject mylocation = (GameObject)Instantiate(locationDots, new Vector3(
 				myVector3.x, 
 				myVector3.y,

@@ -14,27 +14,17 @@ public class LocationSpot : MonoBehaviour {
 
 	void Start(){
 		myViewCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-		//gameManager = GameObject.FindGameObjectWithTag("Manager");
-		//if(gameManager.GetComponent<ViewManager>().DictionaryObjectsAndPoints.TryGetValue(
-
-		//myCube_Proper = gameManager.GetComponent<ViewManager>().DictionaryObjectsAndPoints[transform.position];
 	}
-//
 	void Update(){
 		if (GetComponent<Renderer>().IsVisibleFrom(myViewCamera)) {
 
 			Debug.Log("Visible");
 			iAmVisible = true;
-			//parentObject.GoToCorrectPosition();
-			/////StartCoroutine (parentObject.GoToCorrectPosition());
-			//parentObject.PlayAnimation();
-
 		}
 		else { 
+			Debug.Log("NOT VISIBLE");
 			iAmVisible = false;
-			Debug.Log("Not visible");
-		}
-//
-	}
 
+		}
+	}
 }
