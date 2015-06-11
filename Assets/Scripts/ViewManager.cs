@@ -19,7 +19,7 @@ public class ViewManager : MonoBehaviour {
 
 
 	void OnEnable(){
-		for(int i=0;i<200;i++){
+		for(int i=0;i<500;i++){
 			Vector3 myVector3 = new Vector3(
 				Random.Range (-40,40), 
 				Random.Range (0,10),
