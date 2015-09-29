@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+/**utitlity script to check cube (or SPOT) visibility**/
+
 public static class RendererExtensions{
 
 	public static bool IsVisibleFrom(this Renderer renderer, Camera camera)

@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/**This script instantiates all of the cubes and determines their hiding location**/
+
 public class ViewManager : MonoBehaviour {
 
 	public GameObject myCubePrefab;

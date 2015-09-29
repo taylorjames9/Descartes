@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+/**This script defines a cube and checks to see if it is visible from the camera frustrum**/
+
 public class Cube_Proper : MonoBehaviour {
 	private GameObject gameManager;
 	private Dictionary<GameObject, Transform> myDict;

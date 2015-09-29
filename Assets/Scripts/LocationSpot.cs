@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+/**if a SPOT is visible from the camera view, then a cube rushes towards it**/
+
 public class LocationSpot : MonoBehaviour {
 	
 	private Camera myViewCamera;
